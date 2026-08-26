@@ -1,6 +1,6 @@
 # Gentle Travel Website
 
-เว็บไซต์ Static ภาษาไทย พร้อมใช้งานกับ GitHub และ Cloudflare Pages
+เว็บไซต์ Static ภาษาไทย เวอร์ชัน 2 ปรับตาม mockup ที่อนุมัติ พร้อมใช้งานกับ GitHub และ Cloudflare Pages
 
 ## วิธีอัปโหลด
 
