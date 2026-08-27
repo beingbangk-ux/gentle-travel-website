@@ -6,6 +6,7 @@
   <meta name="description" content="Gentle Travel บริการจองตั๋วเครื่องบิน กรุ๊ปเดินทาง ไฟลต์พิเศษ และวีซ่าท่องเที่ยว สำหรับบุคคล องค์กร และหน่วยงาน">
   <meta name="theme-color" content="#a91f24">
   <title>Gentle Travel | เดินทางง่ายกว่า เมื่อมีคนช่วยดูแล</title>
+  <link rel="icon" href="assets/gentle-travel-logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -40,28 +41,88 @@
     </section>
 
     <section class="trust-strip" aria-label="บริการสำคัญ">
-      <div class="container trust-grid"><span>✈ ตั๋วเครื่องบิน</span><span>♟ กรุ๊ปเดินทาง</span><span>▣ องค์กรและหน่วยงาน</span><span>◉ วีซ่าท่องเที่ยว</span><span>● เจ้าหน้าที่ดูแล</span></div>
+      <div class="container trust-grid">
+        <a class="trust-item" href="#services" data-future-route="/promotions" aria-label="โปรโมชั่นตั๋วเครื่องบิน"><span class="trust-label">โปรโมชั่นตั๋วเครื่องบิน</span></a>
+        <a class="trust-item" href="#corporate" data-future-route="/government-travel" aria-label="ตั๋วราชการและรัฐวิสาหกิจ"><span class="trust-label">ตั๋วราชการและรัฐวิสาหกิจ</span></a>
+        <a class="trust-item" href="#corporate" data-future-route="/corporate-travel" aria-label="ลูกค้าองค์กร"><span class="trust-label">ลูกค้าองค์กร</span></a>
+        <a class="trust-item" href="#visa" data-future-route="/visa" aria-label="วีซ่าท่องเที่ยว"><span class="trust-label">วีซ่าท่องเที่ยว</span></a>
+        <a class="trust-item" href="#contact" data-future-route="/travel-insurance" aria-label="ประกันการเดินทาง"><span class="trust-label">ประกันการเดินทาง</span></a>
+      </div>
     </section>
 
     <section class="section services" id="services">
       <div class="container">
         <div class="section-heading"><div><p class="eyebrow red">WHAT WE DO</p><h2>บริการที่พร้อมดูแล<br>ทุกจุดหมายของคุณ</h2></div><p>ไม่ว่าจะเดินทางคนเดียว เป็นครอบครัว หรือเป็นคณะ เราช่วยประสานงานให้การเดินทางเป็นเรื่องง่ายขึ้น</p></div>
         <div class="cards">
-          <article class="service-card"><div class="card-photo crop-flight"><img src="assets/approved-mockup-reference.png" alt="เครื่องบินระหว่างการเดินทาง"></div><div class="icon">✈</div><h3>ตั๋วเครื่องบิน</h3><p>จองตั๋วเครื่องบินในประเทศและต่างประเทศ ทุกกลุ่มผู้เดินทาง</p><a href="#contact">ดูรายละเอียด <span>›</span></a></article>
-          <article class="service-card"><div class="card-photo crop-corporate"><img src="assets/approved-mockup-reference.png" alt="การประสานงานธุรกิจ"></div><div class="icon">▦</div><h3>ลูกค้าองค์กรและหน่วยงาน</h3><p>บริการสำหรับหน่วยงานราชการ รัฐวิสาหกิจ และบริษัทเอกชน</p><a href="#corporate">ดูรายละเอียด <span>›</span></a></article>
-          <article class="service-card"><div class="card-photo crop-group"><img src="assets/approved-mockup-reference.png" alt="กลุ่มผู้เดินทางในสนามบิน"></div><div class="icon">♟</div><h3>Group &amp; Special Flight</h3><p>จัดการเดินทางเป็นหมู่คณะ กรุ๊ปทัวร์ สัมมนา และไฟลต์พิเศษ</p><a href="#contact">ดูรายละเอียด <span>›</span></a></article>
-          <article class="service-card"><div class="card-photo crop-visa"><img src="assets/approved-mockup-reference.png" alt="หนังสือเดินทางและแผนที่"></div><div class="icon">◎</div><h3>Visa Service</h3><p>รับทำวีซ่าท่องเที่ยวประเทศต่าง ๆ เช่น อเมริกา แคนาดา ยุโรป</p><a href="#visa">ดูรายละเอียด <span>›</span></a></article>
+          <article class="service-card"><div class="card-photo"><img src="assets/service-government-v3.png" alt="หน่วยงานราชการไทย"></div><div class="icon">▥</div><h3>ลูกค้าราชการ</h3><p>บริการจองตั๋วเครื่องบินสำหรับหน่วยงานราชการ ทั้งเส้นทางในประเทศและต่างประเทศ</p><a href="#corporate">ดูรายละเอียด <span>›</span></a></article>
+          <article class="service-card"><div class="card-photo"><img src="assets/service-corporate-v3.png" alt="การประชุมและประสานงานสำหรับลูกค้าองค์กร"></div><div class="icon">▦</div><h3>ลูกค้าองค์กรและหน่วยงาน</h3><p>ดูแลการเดินทางสำหรับบริษัทเอกชน รัฐวิสาหกิจ และหน่วยงานต่าง ๆ อย่างเป็นระบบ</p><a href="#corporate">ดูรายละเอียด <span>›</span></a></article>
+          <article class="service-card"><div class="card-photo"><img src="assets/service-group-v3.png" alt="กลุ่มนักเดินทางพร้อมกระเป๋าในสนามบิน"></div><div class="icon">♟</div><h3>เดินทางเป็นหมู่คณะ</h3><p>บริการจัดการการเดินทางสำหรับคณะ กรุ๊ปทัวร์ สัมมนา และกลุ่มองค์กร</p><a href="#contact">ดูรายละเอียด <span>›</span></a></article>
+          <article class="service-card"><div class="card-photo"><img src="assets/service-visa-v3.png" alt="หนังสือเดินทาง แบบฟอร์มวีซ่า และเอกสารการเดินทาง"></div><div class="icon">◎</div><h3>Visa Service</h3><p>รับทำวีซ่าท่องเที่ยวประเทศต่าง ๆ เช่น อเมริกา แคนาดา ยุโรป และประเทศอื่น ๆ</p><a href="#visa">ดูรายละเอียด <span>›</span></a></article>
         </div>
       </div>
     </section>
 
     <section class="corporate" id="corporate">
-      <div class="container corporate-grid"><div class="corporate-art crop-office"><img src="assets/approved-mockup-reference.png" alt="เจ้าหน้าที่กำลังวางแผนการเดินทางสำหรับองค์กร"></div><div class="corporate-copy"><h2>บริการด้านการเดินทาง<br><em>สำหรับองค์กรและหน่วยงาน</em></h2><p>เรามีทีมงานมืออาชีพที่เข้าใจความต้องการขององค์กรและหน่วยงาน ดูแลการเดินทางของคณะผู้เดินทางอย่างครบวงจร</p><ul><li>ออกใบกำกับภาษี / ใบเสร็จรับเงินได้</li><li>เอกสารครบถ้วนตามระเบียบราชการ</li><li>ประสานงานรวดเร็ว มีเจ้าหน้าที่ดูแลโดยตรง</li></ul><a class="btn btn-primary" href="#contact">ติดต่อเจ้าหน้าที่</a></div></div>
+      <div class="container corporate-grid">
+        <figure class="corporate-art"><img src="assets/corporate-travel-planning-v4.png" alt="เจ้าหน้าที่กำลังตรวจเอกสารและประสานงานเที่ยวบินสำหรับองค์กร"></figure>
+        <div class="corporate-copy">
+          <h2>บริการด้านการเดินทาง<br><em>สำหรับองค์กรและหน่วยงาน</em></h2>
+          <p>เรามีทีมงานที่พร้อมดูแลการเดินทางสำหรับบริษัท องค์กร หน่วยงานราชการ และรัฐวิสาหกิจ ตั้งแต่การสำรองที่นั่ง จัดทำเอกสาร ไปจนถึงการประสานงานตลอดการเดินทาง</p>
+          <ul>
+            <li>รองรับการออกตั๋วสำหรับองค์กรและหน่วยงาน</li>
+            <li>รองรับเอกสารและขั้นตอนสำหรับงานราชการ</li>
+            <li>ประสานงานการเดินทางและคณะเดินทาง</li>
+            <li>มีเจ้าหน้าที่ดูแลและประสานงานโดยตรง</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">ติดต่อเจ้าหน้าที่</a>
+        </div>
+      </div>
     </section>
 
-    <section class="section why" id="about"><div class="container"><p class="eyebrow red center">WHY GENTLE TRAVEL</p><h2 class="center">เพราะการเดินทางที่ดี<br>เริ่มจากการดูแลที่ใส่ใจ</h2><div class="why-grid"><article><b>01</b><h3>เจ้าหน้าที่ดูแลโดยตรง</h3><p>พูดคุยกับทีมงานที่พร้อมช่วยดูรายละเอียดการเดินทางของคุณ</p></article><article><b>02</b><h3>รองรับทั้งบุคคลและองค์กร</h3><p>บริการยืดหยุ่นตามรูปแบบและความต้องการของผู้เดินทาง</p></article><article><b>03</b><h3>ประสานงานกรุ๊ปเดินทาง</h3><p>ช่วยจัดการเที่ยวบินและรายละเอียดสำหรับคณะอย่างเป็นระบบ</p></article><article><b>04</b><h3>ตั๋วและวีซ่าในที่เดียว</h3><p>ลดความยุ่งยากด้วยบริการหลักที่เชื่อมต่อกัน</p></article></div></div></section>
+    <section class="section why" id="about">
+      <div class="container">
+        <p class="eyebrow red center">WHY GENTLE TRAVEL</p>
+        <h2 class="center">เพราะการเดินทางที่ดี<br>เริ่มจากการดูแลที่ใส่ใจ</h2>
+        <div class="why-grid">
+          <article><span class="why-icon" aria-hidden="true">☎</span><h3>เจ้าหน้าที่ดูแลโดยตรง</h3><p>พูดคุยกับทีมงานที่พร้อมช่วยดูแลรายละเอียดการเดินทางของคุณ</p></article>
+          <article><span class="why-icon" aria-hidden="true">♟</span><h3>รองรับทั้งบุคคลและองค์กร</h3><p>บริการยืดหยุ่นตามรูปแบบและความต้องการของผู้เดินทาง</p></article>
+          <article><span class="why-icon" aria-hidden="true">✈</span><h3>ประสานงานกรุ๊ปเดินทาง</h3><p>ช่วยจัดการเที่ยวบินและรายละเอียดสำหรับคณะอย่างเป็นระบบ</p></article>
+          <article><span class="why-icon" aria-hidden="true">◎</span><h3>ตั๋วและวีซ่าในที่เดียว</h3><p>ลดความยุ่งยากด้วยบริการหลักที่เชื่อมต่อกัน</p></article>
+          <article><span class="why-icon" aria-hidden="true">▣</span><h3>จัดทำใบเสนอราคา</h3><p class="quote-speed">ภายใน 30 นาทีในเวลาทำการ</p></article>
+        </div>
+      </div>
+    </section>
 
-    <section class="section visa" id="visa"><div class="container visa-grid"><div><p class="eyebrow red">VISA SERVICES</p><h2>เตรียมเอกสารให้พร้อม<br>แล้วออกเดินทาง</h2><p class="lead">บริการให้คำแนะนำและดำเนินการวีซ่าท่องเที่ยวสำหรับจุดหมายยอดนิยม รวมถึงประเทศอื่น ๆ ที่สามารถสอบถามทีมงานได้</p><a class="text-link" href="#contact">ปรึกษาเรื่องวีซ่ากับเรา →</a></div><div class="country-list"><article><span>US</span><div><h3>สหรัฐอเมริกา</h3><p>United States</p></div><b>→</b></article><article><span>CA</span><div><h3>แคนาดา</h3><p>Canada</p></div><b>→</b></article><article><span>EU</span><div><h3>ยุโรป / เชงเก้น</h3><p>Europe / Schengen</p></div><b>→</b></article><p>ประเทศอื่น ๆ สามารถสอบถามเจ้าหน้าที่ได้</p></div></div></section>
+    <section class="section visa" id="visa">
+      <div class="container">
+        <div class="visa-heading">
+          <p class="eyebrow red">VISA SERVICES</p>
+          <h2>บริการวีซ่าท่องเที่ยว</h2>
+          <p>เตรียมเอกสารให้พร้อม แล้วออกเดินทางสู่จุดหมายของคุณอย่างมั่นใจ</p>
+        </div>
+        <div class="visa-cards">
+          <a class="visa-destination" href="/visa/usa" data-future-route="/visa/usa" aria-label="ดูรายละเอียดวีซ่าสหรัฐอเมริกา">
+            <div class="visa-photo"><img src="assets/visa-usa-v5.jpg" alt="อนุสาวรีย์เทพีเสรีภาพและเส้นขอบฟ้านิวยอร์ก"></div>
+            <div class="visa-card-body"><img class="country-flag" src="assets/flag-usa.svg" alt=""><div><h3>สหรัฐอเมริกา</h3><p>USA</p></div><span class="visa-arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="visa-destination" href="/visa/canada" data-future-route="/visa/canada" aria-label="ดูรายละเอียดวีซ่าแคนาดา">
+            <div class="visa-photo"><img src="assets/visa-canada-v5.jpg" alt="เส้นขอบฟ้าเมืองโตรอนโตและซีเอ็นทาวเวอร์"></div>
+            <div class="visa-card-body"><img class="country-flag" src="assets/flag-canada.svg" alt=""><div><h3>แคนาดา</h3><p>Canada</p></div><span class="visa-arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="visa-destination" href="/visa/schengen" data-future-route="/visa/schengen" aria-label="ดูรายละเอียดวีซ่ายุโรปและเชงเก้น">
+            <div class="visa-photo"><img src="assets/visa-europe-v5.jpg" alt="อาคารสีสันสวยงามริมคลองในเมืองยุโรป"></div>
+            <div class="visa-card-body"><img class="country-flag" src="assets/flag-eu.svg" alt=""><div><h3>ยุโรป / เชงเก้น</h3><p>Europe / Schengen</p></div><span class="visa-arrow" aria-hidden="true">→</span></div>
+          </a>
+          <article class="visa-other">
+            <span class="globe-icon" aria-hidden="true">◎</span>
+            <h3>ประเทศอื่น ๆ</h3>
+            <p>สามารถสอบถามเจ้าหน้าที่ได้</p>
+            <a class="btn visa-contact-btn" href="#contact">สอบถามเลย <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+        <p class="visa-preview-note" id="visa-preview-note" role="status" aria-live="polite"></p>
+      </div>
+    </section>
 
     <section class="contact" id="contact"><div class="container contact-grid"><div><p class="eyebrow">LET'S PLAN YOUR JOURNEY</p><h2>กำลังวางแผน<br>การเดินทางอยู่ใช่ไหม?</h2><p>สอบถามเที่ยวบิน กรุ๊ปเดินทาง หรือบริการวีซ่ากับเจ้าหน้าที่ Gentle Travel</p><div class="contact-actions"><a class="btn btn-line" href="#line-qr">ดู QR สำหรับ LINE</a><a class="phone" href="tel:0922525554"><small>โทรหาเรา</small>092-2525554</a></div></div><div class="qr-card" id="line-qr"><img src="assets/line-qr.jpg" alt="QR Code สำหรับเพิ่มเพื่อน LINE ของ Gentle Travel" width="250" height="250"><div><strong>สแกนเพื่อสอบถาม</strong><span>ผ่าน LINE</span></div></div></div></section>
   </main>
