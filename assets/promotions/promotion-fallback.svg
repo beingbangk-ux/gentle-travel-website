@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="ภาพตัวอย่างโปรโมชั่น">
+  <rect width="1600" height="900" fill="#eeeae7"/>
+  <circle cx="1280" cy="180" r="310" fill="#d9d4cf"/>
+  <path d="M0 700C350 550 610 610 920 490s470-90 680-190v600H0Z" fill="#b02026" opacity=".86"/>
+  <text x="110" y="180" font-family="Arial,sans-serif" font-size="54" font-weight="700" fill="#292d31">GENTLE TRAVEL</text>
+  <text x="110" y="250" font-family="Arial,sans-serif" font-size="30" fill="#666">DEMO PROMOTION</text>
+</svg>

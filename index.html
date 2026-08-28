@@ -18,13 +18,22 @@
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Gentle Travel หน้าแรก">
         <img src="assets/gentle-travel-logo.jpg" alt="โลโก้ Gentle Travel" width="54" height="54">
-        <span><strong>บริษัท เจนเทิล ทราเวล จำกัด</strong><small>GENTLE TRAVEL Co,.Ltd.</small></span>
+        <span><strong>บริษัท เจนเทิล ทราเวล จำกัด</strong><small>GENTLE TRAVEL Co., Ltd.</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="เปิดเมนู"><span></span><span></span><span></span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="เมนูหลัก">
-        <a href="#services">บริการของเรา</a><a href="#corporate">ลูกค้าองค์กร</a><a href="#visa">บริการวีซ่า</a><a href="#about">เกี่ยวกับเรา</a><a href="#contact">ติดต่อเรา</a>
-        <a class="btn btn-line nav-cta" href="#contact">LINE สอบถามเรา</a>
+        <a class="nav-link" href="#services" data-future-route="/services">บริการของเรา</a>
+        <a class="nav-link" href="#about" data-future-route="/about">เกี่ยวกับเรา</a>
+        <a class="nav-link" href="#contact" data-future-route="/contact">ติดต่อเรา</a>
+        <div class="nav-mobile-contact">
+          <a class="btn btn-line nav-cta" href="#line-qr" data-future-line-url="https://line.me/ti/p/~YOUR_LINE_ID">LINE สอบถามเรา</a>
+          <a class="header-phone" href="tel:0922525554">โทร. 092-2525554</a>
+        </div>
       </nav>
+      <div class="header-contact">
+        <a class="btn btn-line nav-cta" href="#line-qr" data-future-line-url="https://line.me/ti/p/~YOUR_LINE_ID">LINE สอบถามเรา</a>
+        <a class="header-phone" href="tel:0922525554">โทร. 092-2525554</a>
+      </div>
     </div>
   </header>
 
@@ -34,7 +43,7 @@
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <h1 id="hero-title"><em>เดินทางง่ายกว่า</em><br>เมื่อมีคนช่วยดูแล</h1>
-        <p>บริการจองตั๋วเครื่องบินสำหรับบุคคลทั่วไป บริษัทเอกชน หน่วยงานราชการ รัฐวิสาหกิจ และการเดินทางเป็นหมู่คณะ พร้อมบริการวีซ่าท่องเที่ยว</p>
+        <p>บริการจองตั๋วเครื่องบินสำหรับบุคคลทั่วไป หน่วยงานราชการ รัฐวิสาหกิจ และองค์กรเอกชน พร้อมดูแลการเดินทางเป็นหมู่คณะและบริการด้านวีซ่า</p>
         <div class="hero-actions"><a class="btn btn-primary" href="#contact">สอบถามผ่าน LINE</a><a class="btn btn-light" href="#services">ดูบริการของเรา</a></div>
       </div>
       <a class="scroll-cue" href="#services" aria-label="เลื่อนไปยังบริการของเรา">⌄</a>
@@ -42,11 +51,11 @@
 
     <section class="trust-strip" aria-label="บริการสำคัญ">
       <div class="container trust-grid">
-        <a class="trust-item" href="#services" data-future-route="/promotions" aria-label="โปรโมชั่นตั๋วเครื่องบิน"><span class="trust-label">โปรโมชั่นตั๋วเครื่องบิน</span></a>
-        <a class="trust-item" href="#corporate" data-future-route="/government-travel" aria-label="ตั๋วราชการและรัฐวิสาหกิจ"><span class="trust-label">ตั๋วราชการและรัฐวิสาหกิจ</span></a>
-        <a class="trust-item" href="#corporate" data-future-route="/corporate-travel" aria-label="ลูกค้าองค์กร"><span class="trust-label">ลูกค้าองค์กร</span></a>
-        <a class="trust-item" href="#visa" data-future-route="/visa" aria-label="วีซ่าท่องเที่ยว"><span class="trust-label">วีซ่าท่องเที่ยว</span></a>
-        <a class="trust-item" href="#contact" data-future-route="/travel-insurance" aria-label="ประกันการเดินทาง"><span class="trust-label">ประกันการเดินทาง</span></a>
+        <a class="trust-item" href="#corporate" data-local-target="#corporate" data-future-route="/government-tickets" aria-label="ตั๋วราชการ"><span class="trust-label">ตั๋วราชการ</span></a>
+        <a class="trust-item" href="#corporate" data-local-target="#corporate" data-future-route="/corporate-tickets" aria-label="ตั๋วลูกค้าองค์กร"><span class="trust-label">ตั๋วลูกค้าองค์กร</span></a>
+        <a class="trust-item" href="#services" data-local-target="#services" data-future-route="/individual-group-tickets" aria-label="ตั๋วบุคคลและหมู่คณะ"><span class="trust-label">ตั๋วบุคคลและหมู่คณะ</span></a>
+        <a class="trust-item" href="#visa" data-local-target="#visa" data-future-route="/visa" aria-label="บริการด้านวีซ่า"><span class="trust-label">บริการด้านวีซ่า</span></a>
+        <a class="trust-item" href="#contact" data-local-target="#contact" data-future-route="/travel-insurance" aria-label="ประกันการเดินทาง"><span class="trust-label">ประกันการเดินทาง</span></a>
       </div>
     </section>
 
@@ -93,6 +102,33 @@
       </div>
     </section>
 
+    <section class="section promotions" id="promotions" aria-labelledby="promotions-title">
+      <div class="container">
+        <div class="promotions-heading">
+          <div>
+            <p class="eyebrow red">PROMOTIONS</p>
+            <h2 id="promotions-title">โปรโมชั่นและข้อเสนอพิเศษ</h2>
+            <p>ข้อเสนอเที่ยวบินและสิทธิพิเศษสำหรับการเดินทางที่คัดสรรมาให้คุณ</p>
+          </div>
+          <a class="promotions-all-link" href="#promotions" data-future-route="/promotions" data-local-promotion-link>ดูโปรโมชั่นทั้งหมด <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="promotion-carousel" aria-roledescription="carousel" aria-label="โปรโมชั่นและข้อเสนอพิเศษ">
+          <div class="promotion-viewport">
+            <div class="promotion-track" id="promotion-track" aria-live="polite"></div>
+          </div>
+          <div class="promotion-controls">
+            <div class="promotion-buttons">
+              <button class="promotion-arrow promotion-prev" type="button" aria-label="ดูโปรโมชั่นก่อนหน้า">←</button>
+              <button class="promotion-arrow promotion-next" type="button" aria-label="ดูโปรโมชั่นถัดไป">→</button>
+            </div>
+            <div class="promotion-dots" role="group" aria-label="เลือกชุดโปรโมชั่น"></div>
+          </div>
+        </div>
+        <p class="promotion-demo-note">เนื้อหาและภาพในส่วนนี้เป็นข้อมูลตัวอย่างเพื่อแสดงรูปแบบเท่านั้น ไม่ใช่ข้อเสนอจริง</p>
+        <p class="promotion-preview-note" id="promotion-preview-note" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
     <section class="section visa" id="visa">
       <div class="container">
         <div class="visa-heading">
@@ -101,15 +137,15 @@
           <p>เตรียมเอกสารให้พร้อม แล้วออกเดินทางสู่จุดหมายของคุณอย่างมั่นใจ</p>
         </div>
         <div class="visa-cards">
-          <a class="visa-destination" href="/visa/usa" data-future-route="/visa/usa" aria-label="ดูรายละเอียดวีซ่าสหรัฐอเมริกา">
+          <a class="visa-destination" href="#visa" data-future-route="/visa/usa" aria-label="ดูรายละเอียดวีซ่าสหรัฐอเมริกา">
             <div class="visa-photo"><img src="assets/visa-usa-v5.jpg" alt="อนุสาวรีย์เทพีเสรีภาพและเส้นขอบฟ้านิวยอร์ก"></div>
             <div class="visa-card-body"><img class="country-flag" src="assets/flag-usa.svg" alt=""><div><h3>สหรัฐอเมริกา</h3><p>USA</p></div><span class="visa-arrow" aria-hidden="true">→</span></div>
           </a>
-          <a class="visa-destination" href="/visa/canada" data-future-route="/visa/canada" aria-label="ดูรายละเอียดวีซ่าแคนาดา">
+          <a class="visa-destination" href="#visa" data-future-route="/visa/canada" aria-label="ดูรายละเอียดวีซ่าแคนาดา">
             <div class="visa-photo"><img src="assets/visa-canada-v5.jpg" alt="เส้นขอบฟ้าเมืองโตรอนโตและซีเอ็นทาวเวอร์"></div>
             <div class="visa-card-body"><img class="country-flag" src="assets/flag-canada.svg" alt=""><div><h3>แคนาดา</h3><p>Canada</p></div><span class="visa-arrow" aria-hidden="true">→</span></div>
           </a>
-          <a class="visa-destination" href="/visa/schengen" data-future-route="/visa/schengen" aria-label="ดูรายละเอียดวีซ่ายุโรปและเชงเก้น">
+          <a class="visa-destination" href="#visa" data-future-route="/visa/schengen" aria-label="ดูรายละเอียดวีซ่ายุโรปและเชงเก้น">
             <div class="visa-photo"><img src="assets/visa-europe-v5.jpg" alt="อาคารสีสันสวยงามริมคลองในเมืองยุโรป"></div>
             <div class="visa-card-body"><img class="country-flag" src="assets/flag-eu.svg" alt=""><div><h3>ยุโรป / เชงเก้น</h3><p>Europe / Schengen</p></div><span class="visa-arrow" aria-hidden="true">→</span></div>
           </a>
@@ -129,6 +165,7 @@
 
   <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/gentle-travel-logo.jpg" alt="" width="58" height="58"><div><strong>GENTLE TRAVEL</strong><span>บริษัท เจนเทิล ทราเวล จำกัด</span></div></div><div><h3>ติดต่อเรา</h3><a href="tel:0922525554">092-2525554</a><a href="mailto:gentletravel.service@gmail.com">gentletravel.service@gmail.com</a></div><div><h3>ที่อยู่บริษัท</h3><address>4/44 ซอย 01 กาญจนาภิเษก 5 แยก 1<br>แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</address></div></div><div class="container copyright"><span>© <span id="year"></span> GENTLE TRAVEL Co,.Ltd. All rights reserved.</span><a href="#top">กลับขึ้นด้านบน ↑</a></div></footer>
   <a class="mobile-line" href="#contact" aria-label="สอบถามผ่าน LINE">LINE <span>สอบถามเรา</span></a>
+  <script src="data/promotions.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
